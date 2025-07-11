@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday, [Friend's Name]!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Cute font from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Teddy Bears SVGs in the Corners -->
+  <div class="teddy teddy-tl"><!-- SVG --></div>
+  <div class="teddy teddy-tr"><!-- SVG --></div>
+  <div class="teddy teddy-bl"><!-- SVG --></div>
+  <div class="teddy teddy-br"><!-- SVG --></div>
+
+  <!-- Balloon & Glitter Container -->
+  <div id="balloon-container"></div>
+  <div id="glitter-container"></div>
+
+  <!-- Happy Birthday Text -->
+  <h1 id="birthday-text">Happy Birthday, <span id="friend-name">[Friend's Name]</span>!</h1>
+
+  <!-- Animated Door/Window with Slideshow -->
+  <div class="door-container" id="door">
+    <div class="slideshow">
+      <img src="https://placekitten.com/300/400" class="slide" alt="slide 1" />
+      <img src="https://placebear.com/300/400" class="slide" alt="slide 2" style="display:none;" />
+      <img src="https://picsum.photos/300/400" class="slide" alt="slide 3" style="display:none;" />
+      <!-- Add more placeholder images as desired -->
+      <button class="prev">&#8678;</button>
+      <button class="next">&#8680;</button>
+    </div>
+  </div>
+
+  <!-- Birthday Music (hidden) -->
+  <audio id="birthday-music" src="assets/happy-birthday.mp3" autoplay loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
